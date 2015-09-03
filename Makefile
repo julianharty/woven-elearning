@@ -8,7 +8,7 @@ clean:
 main.pdf: main.dvi
 	dvipdf main.dvi
 
-main.dvi: main.tex
+main.dvi: main.tex bibliography.bib
 	latex main
 	bibtex main
 	latex main
