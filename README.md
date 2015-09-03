@@ -5,4 +5,4 @@ Thoughts on ways to devise practical, useful, evidence-based, elearning availabl
 Installation Requirements
 -------------------------
 
-sudo apt-get install texlive texlive-latex-extra texlive-fonts-extra 
+sudo apt-get install texlive texlive-latex-extra texlive-fonts-extra texlive-bibtex-extra

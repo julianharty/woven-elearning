@@ -1,12 +1,14 @@
-\documentclass[]{IEEEtran}
+\documentclass[11pt]{IEEEtran}
 
 \usepackage{graphicx}
+\usepackage[style=ieee]{biblatex}
+\bibliography{bibliography}
 
 \begin{document}
 
 \title{Towards a Self Guided Team Based eLearning Solution}
 
-\author{~D ~K ~Allison, ~J. Harty}
+\author{D.~K.~Allison,~J.~Harty}
 
 \maketitle
 
@@ -48,6 +50,9 @@ Holography, image analysis.
 
 % Main section includes
 \input{sections/objectives}
+
+% Include all citations in the database
+\nocite{*}
 
 % Some example resources
 \section{Examples}
@@ -110,8 +115,7 @@ Holograms recorded in such a fashion can not be reconstructed in the conventiona
 \section*{Acknowledgements}
 The authors wish to thank the anonymous reviewers for their valuable suggestions.
 
-\bibliographystyle{IEEEtran}
-\bibliography{bibliography}
+\printbibliography
 
 \end{document}
 
