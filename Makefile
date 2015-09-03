@@ -3,7 +3,7 @@ main: clean main.pdf
 
 .PHONY: clean
 clean:
-	rm -f main.aux main.blg main.dvi main.log main.pdf missfont.log
+	rm -f main.aux main.bbl main.blg main.dvi main.log main.pdf missfont.log
 
 main.pdf: main.dvi
 	dvipdf main.dvi
