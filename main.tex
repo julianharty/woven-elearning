@@ -2,13 +2,14 @@
 
 \usepackage{graphicx}
 \usepackage[style=ieee,backend=bibtex8]{biblatex}
-\bibliography{bibliography}
+\addbibresource{main.bib}
+% \bibliography{main}
 
 \begin{document}
 
-\title{Towards a Self Guided Team Based eLearning Solution}
+\title{Towards a Self Guided Team Based eLearning System}
 
-\author{D.~K.~Allison,~J.~Harty}
+\author{J.~Harty, D.~K.~Allison,}
 
 \maketitle
 
@@ -51,12 +52,62 @@ eLearning, paired learning, digital assessment
 % Main section includes
 \input{sections/objectives}
 
+
+% Learning in pairs
+\input{sections/group-learning}
+
+% Team selection based on achievement level
+\input{sections/balanced-groups}
+
+% Classification of assessment outputs
+\input{sections/assessment-classification}
+
+% Motivation of the teacher
+\input{sections/teacher-motivation}
+
+
+\section{Related work}
+Various learning packages are in widespread use, these include opensource projects such as \cite{kalite} which includes tracking progress of logged-in learners, and others such as \cite{rachel} that provide various materials using a local web server that serves opencontent such as \cite{wikipedia-for-schools} and optionally \cite{kalite}. Of the various opensource projects the one best able to support localisation is \cite{kalite}. 
+
+The providers of \cite{kalite}, an orgainsation called \cite{learning-equality}, want to develop a new platform able to incorporate a wider range of materials and topics from many sources, rather than the pure \cite{khanacademy} contents that \cite{kalite} incorporates.
+
+\section{Needs}
+There are various needs or requirements to enable and support learning globally. These broadly include locally curated contents and materials, learning in languages in local use by the learners, and content that can be adapted to the context of the learner, for instance with local buildings, heat sources, curriculum topics, etc. 
+
+\section{Current snapshot}
+Language support is often minimal, or lags the breadth, depth or currency of the materials in the primary language, which is often US English. Translations may be partial, for instance some videos have voiceovers and/or sub-titles in another language, however the video contents are in another language, again often US English. Even when software has been fully translated the contents may include alien references e.g. to things that are commonly recognised in the USA but not in less affluent parts of the world such as a village school in Tanzania. Also contents such as geographic maps may lack the detail desired, for instance KGeography https://edu.kde.org/applications/school/kgeography/ does not include city or regional maps in India, so pupils stuggled to find relevant materials in the package.
+
+Gaps between curriculum and content: even the larger projects such as \cite{khanacademy} are often not aligned with national curriculae. Some organisations have been working to map materials to their respective state or national curriculum, for instance numeric.org (for various years of the South African curriculum) and Cigital (for class 10 in Indian states that use the Telegu language).
+
+\subsection*{Technical challenges}
+Reliable power, connectivity, or appropriate computers. Cost of equipment and materials.
+
+\subsection*{Other challenges}
+Teacher motivation \& support, particularly in state run schools in India and Kenya, and quite possibly in many other countries and states.
+
+Logistics
+
+Corruption
+
+Maintenance \& Support
+
+\subsection*{Evidence}
+Few of the projects have more than informal feedback that their work has been used or found useful. 
+
+Learning practices that seem to have some evidence include group learning where peers, often with a difference in their competence in a topic, work together and the more competent helps the others learn the topic by teaching it. Examples include \cite{beautifultree}, discussions with various people including Simon Adams, University faculty who grew up in Poland, and the Pathashaala School in Tamil Nadu State.
+
+\subsubsection*{Pathashaala School}
+LearnerEducators EducatorLearners, peer-based with even the teachers considered peers of the pupils. 
+
+\section{Outline Proposal}
+Team based learning, software tracks progress, recommends pairing, and helps identify teachable-moments where a teacher can inject some additional personal help for learners. 
+
 % Include all citations in the database
 \nocite{*}
 
 
 % A non numbered section
-\section*{Acknowledgements}
+\section{Acknowledgements}
 The authors wish to thank the anonymous reviewers for their valuable
 suggestions.
 
